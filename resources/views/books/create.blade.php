@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-  <h1 class = "title">Add a new book</h1>
+  <h2 class = "subtitle">Add a new book</h2>
 
  <form method="POST" action="/books/">
 

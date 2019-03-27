@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <h1 class="title">Books</h1>
+  <h2 class="subtitle">Books</h2>
 
   @foreach ($books as $book)
 

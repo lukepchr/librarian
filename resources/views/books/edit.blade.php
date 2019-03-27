@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-  <h1 class="title">Edit Project</h1>
+  <h2 class="subtitle">Edit Project</h2>
 
 <form method="POST" action="/books/{{ $book->id }}">
 
