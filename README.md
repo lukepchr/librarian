@@ -8,7 +8,7 @@ The purpose of this app is to store information regarding a personal library, es
 
 ## Chalenges
 
-So far the most fun part were:
+So far the most interesting parts were:
 - coming up with a simple search functionality that would allow me to display books with titles starting with each letter accordingly. Initial before each section e.g. books starting with "B". Also not showing the initials when not required.
 - Saving the state of a HTML checkbox while not checked seemed very obvious at first, but turned out to be a nice little lesson learned.
 
