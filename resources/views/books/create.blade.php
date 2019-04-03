@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-  <h2 class = "subtitle">Add a new book</h2>
+  <h2 class = "subtitle"><b>Add a new book</b></h2>
 
  <form method="POST" action="/books/">
 
@@ -43,7 +43,7 @@
 </div>
 </div>
 <div class="field">
-<input type="checkbox" name="lent"> Lent it to someone
+<input type="checkbox" name="lent" value="true"> Lent it to someone
 </div>
 <div class="filed">
 <button type="submit" class="button is-link">Add new</button>

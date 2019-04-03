@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-  <h2 class="subtitle">Edit Project</h2>
+  <h2 class="subtitle"><b>Edit Project</b></h2>
 
 <form method="POST" action="/books/{{ $book->id }}">
 
@@ -13,7 +13,7 @@
     <label class="label" for="title">Title</label>
   </div>
   <div class="control">
-    <input type="text" class="input" name="title" placeholder ="title" value={{ $book->title }}>
+    <input type="text" class="input" name="title" placeholder ="title" value="{{ $book->title }}">
   </div>
 </div>
 
@@ -22,7 +22,7 @@
     <label class="label" for="author">Author</label>
   </div>
   <div class="control">
-    <input type="text" class="input" name="author" placeholder ="author" value={{ $book->author }}>
+    <input type="text" class="input" name="author" placeholder ="author" value="{{ $book->author }}">
   </div>
 </div>
 
@@ -53,6 +53,7 @@
 
 </div>
 
+<div class="level">
 <div class="control">
 <button type="submit" class="button is-link">Update project</button>
 </div>
@@ -64,4 +65,5 @@
 <button type="submit" class="button is-warning">Delete book</button>
 <a class="button" href="/">Cancel</a>
 </form>
+</div>
   @endsection
