@@ -18,3 +18,4 @@ The purpose of this app is to store information regarding a personal library, es
 - New model for "Wishlist" to put new book ideas through
 - Logging in
 - Layout
+- Validation layers
