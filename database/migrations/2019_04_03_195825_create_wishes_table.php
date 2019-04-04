@@ -15,6 +15,9 @@ class CreateWishesTable extends Migration
     {
         Schema::create('wishes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedInteger('book_id');
+            $table->string('description');
+            $table->boolean('bought')->default(false);
             $table->timestamps();
         });
     }

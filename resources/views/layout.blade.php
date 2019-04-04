@@ -15,12 +15,20 @@
     padding-right: 20px;
   }
 
+  .p0{
+    display: inline;
+  }
+
   .mt5{
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .mb5{
     margin-bottom: 5px;
+  }
+
+  .mb20{
+    margin-bottom: 20px;
   }
 
   </style>

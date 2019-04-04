@@ -13,4 +13,10 @@ class Book extends Model
       'notes',
       'lent'
 ]    ;
+
+public function wishes()
+{
+    return $this->hasMany(Wish::class);
+}
+
 }

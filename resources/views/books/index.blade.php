@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="mt5">List of books in alphabetical order, click to view more details or make changes.</div>
+<div class="mt 5">List of books in alphabetical order, click to view more details or make changes.</div>
 @php
 $alpha = (range('a', 'z'));
 
