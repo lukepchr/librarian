@@ -1,7 +1,8 @@
 @extends('layout')
 
 @section('content')
-<div class="mt5">List of books in alphabetical order, click to view more details or make changes.</div>
+
+  <div class="mt5">Hi, this is my list of books. This view is <b>read only</b> because you are not <a href='/'>logged in.</a></div>
 @php
 $alpha = (range('a', 'z'));
 
@@ -31,6 +32,5 @@ foreach($books as $book){
 
 
   <hr>
-  <a class="button is-link" href="/books/create">Create a new one...</a>
-<hr>
+
   @endsection

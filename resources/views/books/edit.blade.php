@@ -13,7 +13,7 @@
     <label class="label" for="title">Title</label>
   </div>
   <div class="control">
-    <input type="text" class="input" name="title" placeholder ="title" value="{{ $book->title }}">
+    <input type="text" class="input" name="title" placeholder ="title" value="{{ $book->title }}" required>
   </div>
 </div>
 
@@ -22,7 +22,7 @@
     <label class="label" for="author">Author</label>
   </div>
   <div class="control">
-    <input type="text" class="input" name="author" placeholder ="author" value="{{ $book->author }}">
+    <input type="text" class="input" name="author" placeholder ="author" value="{{ $book->author }}" required>
   </div>
 </div>
 
@@ -32,7 +32,7 @@
     <label class="label" for="description">Description</label>
     </div>
     <div class="control">
-    <textarea name="description" class="textarea">{{ $book->description }}</textarea>
+    <textarea name="description" class="textarea" required>{{ $book->description }}</textarea>
   </div>
 </div>
 
@@ -41,7 +41,7 @@
   <label class="label" for="notes">Notes</label>
   </div>
   <div class="control">
-  <textarea name="notes" class="textarea">{{ $book->notes }}</textarea>
+  <textarea name="notes" class="textarea" required>{{ $book->notes }}</textarea>
 </div>
 </div>
 

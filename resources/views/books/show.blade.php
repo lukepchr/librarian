@@ -10,6 +10,7 @@
     <a class="button is-link" href="/books/{{ $book->id }}/edit">Edit</a>
     <a class="button" href="/">Cancel</a>
   </p>
+  <hr>
 
 
 

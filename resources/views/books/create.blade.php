@@ -39,7 +39,7 @@
   <label for="notes">Notes:</label>
 </div>
 <div class = "control">
-   <textarea name="notes" class="input {{ $errors->has('notes') ? 'is-danger' : '' }}" placeholder="Your notes..."></textarea>
+   <textarea name="notes" class="input {{ $errors->has('notes') ? 'is-danger' : '' }}" placeholder="Your notes..." required></textarea>
 </div>
 </div>
 <div class="field">

@@ -6,20 +6,24 @@ use App\Book;
 
 class BooksController extends Controller
 {
+    public function friends(){
+      $books = Book::all();
+      return view('books.friends', compact('books'));
+    }
     public function index(){
-
         $books = Book::all();
         return view('books.index', compact('books'));
     }
+
     public function create(){
       return view('books.create');
     }
+
     public function store(){
       request()->validate([
         'title' => 'required',
         'description' => 'required'
       ]);
-
       if(request ('lent') == 'true'){
       // converting HTML form string "true" to boolean
         $lent= true;
@@ -56,8 +60,8 @@ class BooksController extends Controller
       return redirect('/');
     }
     public function destroy(Book $book){
-$book->delete();
-return redirect('/books');
+      $book->delete();
+      return redirect('/books');
     }
 
 }

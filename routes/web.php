@@ -11,6 +11,7 @@
 |
 */
 Route::get('/', 'BooksController@index');
+Route::get('friends', 'BooksController@friends');
 Route::resource('books', 'BooksController');
 
 // Route::get('/', 'ProjectsController@index');
