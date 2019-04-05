@@ -9,7 +9,19 @@
     <div class="container mb20">
       <h2 class="title is-5 p0">Related wishlist items</h2>
     @foreach ($book->wishes as $wish)
-    <li>{{$wish->description}}</li>
+
+    <form method="POST" action="/wishes/{{ $wish->id }}">
+      @method('PATCH')
+      @csrf
+      <label class="checkbox" for="completed">
+
+        <input type="checkbox" name="completed" onChange="this.form.submit()">
+
+          {{ $wish->description }}
+
+        </label>
+    </form>
+
     @endforeach
     </div>
 @endif

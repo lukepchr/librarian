@@ -13,6 +13,7 @@
 Route::get('/', 'BooksController@index');
 Route::get('friends', 'BooksController@friends');
 Route::resource('books', 'BooksController');
+Route::patch('/wishes/{wish}', 'WishController@update');
 
 // Route::get('/', 'ProjectsController@index');
 // Route::get('/create', 'ProjectsController@create');
