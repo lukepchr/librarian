@@ -13,9 +13,9 @@
     <form method="POST" action="/wishes/{{ $wish->id }}">
       @method('PATCH')
       @csrf
-      <label class="checkbox" for="completed">
+      <label class="checkbox" for="bought">
 
-        <input type="checkbox" name="completed" onChange="this.form.submit()">
+        <input type="checkbox" name="bought" onChange="this.form.submit()">
 
           {{ $wish->description }}
 

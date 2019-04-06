@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Wish extends Model
 {
-    // Wishlist @TODO
+      protected $guarded = [];
 }
