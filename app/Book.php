@@ -14,6 +14,15 @@ class Book extends Model
       'lent'
 ]    ;
 
+public function addWish($description){
+
+Wish::create([
+    'book_id' => $this->id,
+    'description' => $description
+]);
+
+}
+
 public function wishes()
 {
     return $this->hasMany(Wish::class);

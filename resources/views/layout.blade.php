@@ -39,9 +39,9 @@
     <section class="hero is-info is-bold">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-1">
+          <a href="/"><h1 class="title is-1">
             .: <i class="fas fa-book-open"></i> Librarian</h1>
-          </h1>
+          </h1></a>
         <h2 class="subtitle">
             So many books, so little time!
         </h2>

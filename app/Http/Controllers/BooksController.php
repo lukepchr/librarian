@@ -6,6 +6,9 @@ use App\Book;
 
 class BooksController extends Controller
 {
+
+
+
     public function friends(){
       $books = Book::all();
       return view('books.friends', compact('books'));

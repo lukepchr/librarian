@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="container  mt5">
+<div class="container  mt5 box">
   <b><h1 class="title is-3">{{ $book->title }}</b></h1><h2 class="subtitle is-5"><i>by {{ $book->author }}</i></h2>
   <div class="content">{{ $book->description }}</div>
 
@@ -32,6 +32,21 @@
     @endforeach
     </div>
 @endif
+<form method="POST" action="/books/{{ $book->id }}/wishes" class="box">
+@method('PATCH')
+@csrf
+    <div class="field">
+      <label class="label" for="description">Add to the wishlist...</label>
+<div class="level">
+  <div class="level-left">
+        <div class="control level-item">
+          <input type="text" class="input" name="description" placeholder="Add a new title">
+        </div>
+        <button class="button is-link level-item" type="submit">Add</button>
+    </div>
+  </div>
+  </div>
+</form>
 
   <p>
     <a class="button is-link" href="/books/{{ $book->id }}/edit">Edit</a>
