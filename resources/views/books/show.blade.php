@@ -40,7 +40,7 @@
 <div class="level">
   <div class="level-left">
         <div class="control level-item">
-          <input type="text" class="input" name="description" placeholder="Add a new title">
+          <input type="text" class="input" name="description" placeholder="Add a new title" required>
         </div>
         <button class="button is-link level-item" type="submit">Add</button>
     </div>
