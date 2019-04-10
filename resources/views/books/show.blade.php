@@ -12,7 +12,7 @@
 </div></div>
 
 @if($book->wishes->count())
-    <div class="container mb20">
+    <div class="container mb20 box">
       <h2 class="title is-5 p0">Related wishlist items</h2>
     @foreach ($book->wishes as $wish)
 
@@ -57,3 +57,14 @@
 
 
 @endsection
+
+@if ($errors->any())
+  <div class="notification is-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li> {{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
+    @endif
+     </form>

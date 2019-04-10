@@ -15,6 +15,7 @@ Route::get('friends', 'BooksController@friends');
 Route::resource('books', 'BooksController');
 Route::patch('/wishes/{wish}', 'WishController@update');
 Route::patch('books/{book}/wishes', 'WishController@store');
+Route::patch('/wishes', 'WishController@store');
 
 // Route::get('/', 'ProjectsController@index');
 // Route::get('/create', 'ProjectsController@create');

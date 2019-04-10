@@ -14,12 +14,13 @@ class Book extends Model
       'lent'
 ]    ;
 
-public function addWish($description){
+public function addWish($wish){
 
-Wish::create([
-    'book_id' => $this->id,
-    'description' => $description
-]);
+$this->wishes()->create($wish);
+// Wish::create([
+//     'book_id' => $this->id,
+//     'description' => $description
+// ]);
 
 }
 

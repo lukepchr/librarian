@@ -2,20 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Wish;
 use App\Book;
 
 class BooksController extends Controller
 {
-
-
-
     public function friends(){
       $books = Book::all();
       return view('books.friends', compact('books'));
     }
     public function index(){
         $books = Book::all();
-        return view('books.index', compact('books'));
+        $wishes = Wish::all();
+        return view('books.index', compact('books', 'wishes'));
     }
 
     public function create(){
