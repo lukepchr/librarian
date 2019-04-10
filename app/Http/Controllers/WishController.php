@@ -26,7 +26,7 @@ class WishController extends Controller
 
         Wish::create([
           'description' => request('description'),
-          'book_id' => "0"
+          'book_id' => "0" // zero will mean no record related to it - global
 ]);
 }
       //  // This works too.

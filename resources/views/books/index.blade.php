@@ -21,7 +21,7 @@
             $currentLetterCap</h1></div>";
             $initial = false;
             }
-            echo "
+          echo "
             <div class='container'>
             <a href='/books/$book->id'>
             <b>$book->title</b></a>, <i>$book->author</i>
@@ -54,15 +54,17 @@
         @endphp
 
         <form method="POST" action="/wishes/{{ $wish->id }}">
-          @method('PATCH')
-          @csrf
-          <label class="checkbox" for="bought">
+        @method('PATCH')
+        @csrf
+        <label class="checkbox" for="bought">
 
-            <input type="checkbox" name="bought" {{ $wish->bought ? 'checked' : '' }} onChange="this.form.submit()">
+        <input type="checkbox" name="bought" {{ $wish->bought ? 'checked' : '' }}
+         onChange="this.form.submit()">
 
         <span style='text-decoration: {{$wish->bought ? "line-through" : ""}};
-                      color: {{$wish->bought ? "grey" : "black"}}'>
-              {!! $wish->description . ' <p class="is-size-7 has-text-grey" style="display: inline">'. $readyTitle . "</p>" !!} </span>
+                     color: {{$wish->bought ? "grey" : "black"}}'>
+                     {!! $wish->description . ' <p class="is-size-7 has-text-grey"
+                     style="display: inline">'. $readyTitle . "</p>" !!} </span>
 
             </label>
         </form>
@@ -73,19 +75,20 @@
       <form method="POST" action="/wishes" class="box mt5">
       @method('PATCH')
       @csrf
-          <div class="field">
-            <label class="label" for="description">Add to the wishlist...</label>
-      <div style="display:flex;">
-              <div class="control" >
-                <input type="text" style="width: 95%" class="input" name="description" placeholder="Add a new title" required>
-              </div>
-              <button class="button is-link" style="width:30%;" type="submit">Add</button>
+        <div class="field">
+          <label class="label" for="description">Add to the wishlist...</label>
+          <div style="display:flex;">
+            <div class="control" >
+              <input type="text" style="width: 95%" class="input" name="description"
+              placeholder="Add a new title" required>
+            </div>
+            <button class="button is-link" style="width:30%;" type="submit">Add</button>
           </div>
-        </div>
         </div>
       </form>
 
 
+</div>
 </div>
 </div>
   @endsection
