@@ -9,9 +9,11 @@ use App\Book;
 class WishController extends Controller
 {
     public function update(Wish $wish){
-      $wish->update([
-        'bought' => request()->has('bought')
-      ]);
+
+      $wish -> complete(request()->has('bought'));
+      // $wish->update([
+      //   'bought' => request()->has('bought')
+      // ]);
       return back();
 }
       public function store(Book $book){
@@ -37,4 +39,6 @@ class WishController extends Controller
       return back();
 
     }
+
+
 }
